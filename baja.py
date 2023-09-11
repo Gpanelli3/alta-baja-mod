@@ -17,9 +17,9 @@ id=form['id'].value
 sql=(f"DELETE FROM alumnos where idalumnos = {id}")
 cursor1.execute(sql)
 conexion.commit()
-
-
-
-
 conexion.close()
+
+
+
+
 
