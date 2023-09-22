@@ -66,7 +66,6 @@ print("""<html>
             <br>
             <form method="post" action="alta.py">
         	    <p>Ingreso de alumnos</p>
-                id:<input type="number" name="id" /> <br/>
                 nombre: <input type="text" name="nombre"  /> <br/>
                 apellido: <input type="text" name="apellido" /> <br/>
                 <button>INGRESAR ALUMNO</button>
