@@ -11,19 +11,19 @@ cursor1=conexion.cursor()
 form = cgi.FieldStorage() 
 # Get data from fields
 
-#id=form['id'].value
+id=form['id'].value
 first_name = form['nombre'].value
 last_name  = form['apellido'].value
 
 
-sql="INSERT INTO alumnos(nombre,apellido) VALUES (%s,%s)"
+sql="INSERT INTO alumnos(idalumnos,nombre,apellido) VALUES (%s,%s,%s)"
 if first_name == 'nombre':
     ("<html>")
     print('error, ya existe ese alumno')
     ("</html>")
 
 else:
-    valores=(first_name,last_name)
+    valores=(id,first_name,last_name)
     cursor1.execute(sql,valores)
 
 
