@@ -77,6 +77,15 @@ print("""<html>
                 id:<input type="number" name="id" /> <br/>
                 <button>DAR DE BAJA ALUMNO</button>
             </form>
+
+            <form method="post" action="modificacion.py">
+        	    <p>Modificar datos de alumnos</p>
+                id: <input type="number" name="id"/> <br/>
+                nombre: <input type="text" name="nombre"  /> <br/>
+                apellido: <input type="text" name="apellido" /> <br/>
+                <button>ACTUALIZAR REGISTRO</button>
+            </form>
+
       </body>
                 
       
